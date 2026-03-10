@@ -1,0 +1,19 @@
+
+{% extends "courses/base.html" %}
+
+{% block title %}
+<title>Course Details</title>
+{% endblock title %}
+
+
+
+{% block content %}
+<h1>Name ={{ course.title}}</h1>
+<h1>description={{course.description}}</h1>
+<h1>publish_at={{course.publish_at}}</h1>
+<h1>last_modification={{course.last_modification}}</h1>
+<h1>final_degree={{course.final_degree}}</h1>
+<h1>category={{course.category}}</h1>
+<img src="/media/{{course.photo}}" alt="">
+{% endblock content %}
+
